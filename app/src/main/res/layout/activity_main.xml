@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:visibility="gone"
+            android:id="@+id/dataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/andika"
+                    android:text="Name : loading . . ." />
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginHorizontal="20dp"
+                    android:fontFamily="@font/andika"
+                    android:text="Id : loading . . . "
+                    android:textAllCaps="true"
+                    android:textColor="#424242" />
+
+
+                <TextView
+                    android:id="@+id/giveExam"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/andika"
+                    android:text="Give Exam"
+                    android:textColor="#F40000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/giveExam"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/math"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:onClick="giveExam"
+                            app:cardBackgroundColor="#FFBDB8"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <TextView
+                                style="@style/TextAppearance.AppCompat.Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/andika"
+                                android:text="MATH"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/biology"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:onClick="giveExam"
+                            app:cardBackgroundColor="#FFE7C4"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <TextView
+                                style="@style/TextAppearance.AppCompat.Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/andika"
+                                android:text="Biology"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black" />
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/english"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:onClick="giveExam"
+                            app:cardBackgroundColor="#BAFABD"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <TextView
+                                style="@style/TextAppearance.AppCompat.Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/andika"
+                                android:text="English"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/dsa"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:onClick="giveExam"
+                            app:cardBackgroundColor="#D3BAFF"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <TextView
+                                style="@style/TextAppearance.AppCompat.Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/andika"
+                                android:text="dsa"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black" />
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/andika"
+                        android:text="Progress"
+                        android:textColor="#F80000" />
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/andika"
+                        android:text="Math"
+                        android:textColor="@color/black" />
+
+                    <ProgressBar
+                        android:id="@+id/mathProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/andika"
+                        android:text="Biology"
+                        android:textColor="@color/black" />
+
+                    <ProgressBar
+                        android:id="@+id/biologyProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/andika"
+                        android:text="english"
+                        android:textColor="@color/black" />
+
+                    <ProgressBar
+
+                        android:id="@+id/englishProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/andika"
+                        android:text="dsa"
+                        android:textColor="@color/black" />
+
+                    <ProgressBar
+
+                        android:id="@+id/dsaProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:text="@string/logout"
+                        android:backgroundTint="#FBA3A3"
+                        android:id="@+id/logOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:id="@+id/ProgressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="100dp" />
+
+            <TextView
+                android:fontFamily="@font/andika"
+                android:id="@+id/loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressBar"
+                android:layout_marginHorizontal="30dp"
+                android:elevation="50dp"
+                android:text="Loading . . ."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

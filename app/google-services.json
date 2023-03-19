@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "261963752370",
+    "project_id": "eexam-7b339",
+    "storage_bucket": "eexam-7b339.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261963752370:android:1b9072fe9d69c8dc50baab",
+        "android_client_info": {
+          "package_name": "com.example.eexam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261963752370-tvfmudok2fmkt4vc52hj13ssbism9k2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwHc3zNSSgQTEWxcETV6vsYVAvWXxhXKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261963752370-tvfmudok2fmkt4vc52hj13ssbism9k2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
