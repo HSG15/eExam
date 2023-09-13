@@ -1,6 +1,6 @@
 # eExam - Online Exam App
 
-		eExam is an online exam application designed with a user-friendly Material Design interface. <br> The app consists of two separate modules: one for administrators  and another  for students. <br> LottieFiles animations enhance the visual appeal of the app . <br> Administrators can easily upload questions to the Firebase database, while students can log in or sign up to access and answer these questions,as well as view their corresponding marks.
+		eExam is an online exam application designed with a user-friendly Material Design interface. The app consists of two separate modules: one for administrators  and another  for students. LottieFiles animations enhance the visual appeal of the app . Administrators can easily upload questions to the Firebase database, while students can log in or sign up to access and answer these questions,as well as view their corresponding marks.
 
 ## Screenshots
 
